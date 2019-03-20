@@ -1,0 +1,370 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position:relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+ /*////////////////////////////////////////////////////* Cover *\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.cover
+{
+    width: 100%;
+}
+.cover img
+{
+    width: 100%;
+}
+/*///////////////////////////////////////////////////* Navigation Bar *\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+#leftBar
+{
+    width: 40%;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#logo
+{
+    width: 20%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+#rightBar
+{
+    width: 40%;
+    float: right;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+nav
+{
+    bottom:5px;
+}
+nav ul
+{
+    width: 100%;
+    background: black;
+    overflow: hidden;
+    color: white;
+    transition: max-height 0.4s;
+}
+
+nav ul a
+{
+    display: inline-block;
+    padding: 10px 85px;
+    height: 100%;
+    animation: sidebounce 4s linear ;
+}
+
+nav ul a
+{
+    color: white;
+    font-size: 1.6em;
+}
+
+nav img
+{
+    height: 4em;
+}
+
+.handle
+{
+    width: 100%;
+    background: black;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 15px 10px;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+.showing
+{
+    max-height: 20em;
+}
+
+/*////// hover \\\\\\*/
+
+nav ul a:hover
+{
+    transform: rotateZ(720deg);
+    background-color: #ffd530;
+    color: black;
+    transition: 1.5s;
+    border-radius: 50%;
+}
+/*/////////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+/*/////////////////////////////////////////////////* Buttons *\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+#middle
+{
+    width:100%;
+    height:800px;
+    background-image:url(Images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+    bottom:5px;
+}
+
+#middle a
+{
+    color: black;
+}
+
+#buttons
+{
+    width:600px;
+    height:590px; 
+    animation: bounceIn 6s linear ;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.b
+{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    font-size:1.5em;
+}
+
+.link 
+{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    display:inline-block;     
+    background-image:url(Images/gear.png);
+    background-size: 100%;
+    background-repeat:no-repeat;
+    animation: 2s linear;  
+}
+
+#Reg .link
+{
+    animation: barrelRoll linear 3s infinite;
+}
+
+#PST .link
+{
+    top:30px;
+    right:22px;
+    animation:invertBarrelRoll linear 3s infinite;
+}
+
+
+#Reg img
+{
+   animation: flash linear 1s infinite;
+   transform: scale(0.8);
+}
+
+#Reg b 
+{ 
+    bottom: 75%;
+}
+
+#Reg img 
+{ 
+    bottom: 70% ;
+}
+
+#PST b 
+{
+    bottom: 72%;
+    right:10%;
+}
+
+#PST img 
+{ 
+    bottom: 75%;
+    right:6%;
+}
+
+
+/*////// hover \\\\\\*/
+
+.b:hover
+{
+    cursor: pointer;
+}
+
+#PST:hover .link
+{
+    animation:invertBarrelRoll linear 8s infinite;
+}
+
+#Reg:hover .link
+{
+    animation:barrelRoll linear 8s infinite;
+}
+
+#Reg:hover > #img1 
+{
+    transform: scale(1.3);
+    animation: flash linear 0.5s infinite;
+}
+
+#PST:hover > #img2 
+{
+    transform: scale(1.3);
+}
+
+/*////// Active \\\\\\*/
+
+#Reg:active .link
+{
+    animation:barrelRoll linear 1s infinite;
+}
+#PST:active .link
+{
+    animation:invertBarrelRoll linear 1s infinite;
+}
+
+/*/////////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+/*///////////////////////////////////////////////////* Media Query *\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+@media screen and (max-width: 1530px){
+
+    nav ul a 
+    {
+        box-sizing: border-box;
+        padding: 15px 30px; 
+         font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 980px){
+    nav ul a {
+        box-sizing: border-box;
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 800px){
+    nav ul a {
+        box-sizing: border-box;
+        padding: 10px 20px;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (min-width:650px)
+{
+    #rightBar
+    { right:30px }
+    #buttons
+    { top: 200px }
+    .b
+    { float:left }
+}
+
+@media screen and (max-width: 650px)
+{
+    nav ul
+    {max-height: 0;}
+    
+    nav ul a 
+    {
+        box-sizing: border-box;
+        padding: 15px 20px;
+        font-size: 1em;
+        width: 100%;
+        animation: none;
+    }
+    nav ul a:hover
+    { transform: rotateX(720deg); }
+   
+    nav ul #leftBar
+    {
+        width: 100%;
+        margin: 0;
+    } 
+    nav ul #rightBar
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav ul #logo 
+    { display: none;}
+
+    .handle
+    { display: block; }
+    
+    #middle 
+    { width: 100%;}
+   
+    #buttons
+    {
+        width: 300px;
+        margin: auto;
+        top: 80px;
+    }
+
+    #PST
+    { left: 8% }
+  /*  #Reg{      
+        margin-bottom: 20px;  
+    }*/
+}
+/*/////////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+/* //////////////////////////////////////////////////* animations *\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+@keyframes barrelRoll 
+{
+   from{transform:rotateZ(0deg)}
+   to{transform:rotateZ(360deg)}
+}
+
+@keyframes invertBarrelRoll 
+{
+   from{transform:rotateZ(0deg)}
+   to{transform:rotateZ(-360deg)}
+}
+
+@keyframes bounceIn 
+{
+  0% {transform: scale(0.1);opacity: 0;}
+  60% {transform: scale(1.2);opacity: 1;}
+  100% {transform: scale(1);}
+}
+
+@keyframes flash
+{
+    0% {opacity:1;} 
+    50% {transform:scale(1.1);opacity:0.8;} 
+    100% {opacity:0.8;}
+}
+
+@keyframes sidebounce
+{
+    0%{transform: translateX(-200px);opacity: 0;}
+    20%{transform: translateX(100px);opacity:0.2;}
+    40%{transform: translateX(-100px);opacity:0.4;}
+    60%{transform: translateX(50px); opacity:0.6;}
+    80%{transform: translateX(-50px);opacity:0.8;}
+    100%{transform: translateX(0px);opacity: 1;}
+}
+/*/////////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/

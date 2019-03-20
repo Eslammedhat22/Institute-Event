@@ -1,0 +1,73 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+
+body
+{
+	width:100%;
+	height:auto;
+	background-image:url('Images/cover3.jpg'); 
+	background-size: contain;
+}
+
+.container
+{
+	max-width:700px;
+	margin:auto;
+	background-color:black;
+	opacity:0.8;
+}
+
+#F
+{
+	color: red !important;
+	text-align: center;
+	font-size: 1em;
+	background-color:white;
+	opacity:0.7;
+}
+
+#S
+{
+	color: green !important;
+	text-align: center;
+	font-size: 1em;
+	background-color:white;
+	opacity:0.7;
+}
+
+
+img
+{
+	width:60px;
+	height:80px;
+	margin-left:45%;
+}
+
+
+label
+{
+	color:White;
+	font-size:1.1em;
+}
+
+input
+{
+	color:black !important;
+}
+
+
+.form-control:focus
+{
+	box-shadow:4px 4px #ffd530;
+	border:black;
+}
+
+.btn-warning 
+{
+	font-weight:600;
+	color:black;
+	background-color:#ffd530;
+}

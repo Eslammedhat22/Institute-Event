@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IDT Egypt</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="Images/logo.png">
+</head>
+
+<body>
+<!--///////////////////////////////////////Cover\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->        
+    <div class="cover"><img src="Images/cover.png" alt="Cover"></div> 
+<!--//////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+
+<!--///////////////////////////////////Navigation Bar\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->  
+    <nav>
+        <ul>
+            <div id="leftBar">
+                <a href="#">Events</a>
+                <a  href="#">Gallery</a>
+            </div>
+            <div id="logo"><a href="#"><img src="Images/logo.png" ></a></div>
+            <div id="rightBar">
+                <a href="#">About us</a>
+                <a href="#">Sponsors</a>
+            </div>
+        </ul>
+        <div class="handle">
+            <label for="toggle">&#9776; MENU</label>
+        </div>        
+    </nav>
+
+    <script>
+        $('.handle').on('click', function(){
+        $('nav ul').toggleClass('showing');});
+    </script>
+<!--//////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+
+<!--///////////////////////////////////////Buttons\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->  
+    <div id="middle">
+        <div id="buttons">
+            <div class="b" id="Reg">
+                <a class="link" href="#"></a>
+                    <b><a href="#">Registeration</a></b><br>
+                    <img id="img1" src="Images/push(1).png"> 
+            </div>              
+
+            <div class="b" id="PST">
+                <a class="link" href="#"> </a>
+                    <b><a href="#">PST</a></b><br><br>
+                    <img id="img2" src="Images/test.png">   
+            </div> 
+        </div>
+    </div>
+<!--//////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+</body>
+</html>
